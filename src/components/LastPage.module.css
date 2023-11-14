@@ -1,0 +1,15 @@
+.lastPage{
+    background-color: #E4E4E4;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.kontaktInfo img{
+   width: 100%;
+   margin-top: 4vh;
+    
+}

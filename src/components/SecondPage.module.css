@@ -1,0 +1,462 @@
+/* Media Query für kleinere Bildschirme (z.B. Handys) */
+@media only screen and (min-width: 1200px) {
+  .secondPage {
+    background-color: #e7e0eb;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /*Überschrift*/
+  .titlePageTwo h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 5vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+    opacity: 0; /* Setzt die Opacity auf 0, um unsichtbar zu sein */
+    visibility: hidden; /* Setzt die Visibility auf hidden */
+    
+  }
+
+  /*Container der Bilder*/
+  .pictures {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pictures .pictureContainer {
+    position: relative;
+  }
+
+  /*design der Bilder*/
+  .pictures img {
+    width: 29vw;
+    height: 55vh;
+    padding: 1vw;
+    margin-bottom: 5px;
+    transition: transform 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
+  }
+
+  /*design der Bildtexte*/
+  .imageText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .pictureContainer:hover img {
+    transform: scale(1.1);
+  }
+
+  /*ausblenden der Stichworte, wenn ich über die Bilder hover*/
+  .pictureContainer:hover .imageText {
+    color: transparent;
+  }
+
+  /*Design für den Text, wenn ich über die Bilder hover*/
+  .imageBackgroundText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: transparent;
+    font-size: 2vh;
+    width: 30vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+    border-radius: 10px;
+  }
+
+  /*lässt den Hover-text erscheinen*/
+  .pictureContainer:hover .imageBackgroundText {
+    color: white;
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+
+  .PictureThree {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  .secondPage {
+    background-color: #e7e0eb;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  /*Überschrift*/
+  .titlePageTwo h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 5vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+    opacity: 0; /* Setzt die Opacity auf 0, um unsichtbar zu sein */
+    visibility: hidden; /* Setzt die Visibility auf hidden */
+    
+  }
+
+  /*Container der Bilder*/
+  .pictures {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pictures .pictureContainer {
+    position: relative;
+  }
+
+  /*design der Bilder*/
+  .pictures img {
+    width: 29vw;
+    height: 50vh;
+    padding: 1vw;
+    margin-bottom: 5px;
+    transition: transform 0.3s; /* Fügt eine sanfte Übergangsanimation hinzu */
+  }
+
+  /*design der Bildtexte*/
+  .imageText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .pictureContainer:hover img {
+    transform: scale(1.1);
+  }
+
+  /*ausblenden der Stichworte, wenn ich über die Bilder hover*/
+  .pictureContainer:hover .imageText {
+    color: transparent;
+  }
+
+  /*Design für den Text, wenn ich über die Bilder hover*/
+  .imageBackgroundText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: transparent;
+    font-size: 2vh;
+    width: 30vw;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: color 0.3s;
+  }
+
+  /*lässt den Hover-text erscheinen*/
+  .pictureContainer:hover .imageBackgroundText {
+    color: white;
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .secondPage {
+    background-color: #e7e0eb;
+    position: relative;
+    width: 100vw;
+  }
+
+  /*Überschrift*/
+  .titlePageTwo h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 5vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+   
+  }
+
+  /*Container der Bilder*/
+  .pictures {
+    display: flex;
+    flex-direction: column; /* Änderung auf column */
+    align-items: center; /* Zentriert die Elemente horizontal */
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pictures .pictureContainer {
+    position: relative;
+    margin-bottom: 10px; /* Abstand zwischen den Bildern */
+  }
+
+  /*design der Bilder*/
+  .pictures img {
+    width: 60vw;
+    height: 50vh;
+    padding: 1vw;
+    transition: transform 0.3s;
+  }
+
+  /*design der Bildtexte*/
+  .imageText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .pictureContainer:hover img {
+    transform: scale(1.1);
+  }
+
+  /*ausblenden der Stichworte, wenn ich über die Bilder hover*/
+  .pictureContainer:hover .imageText {
+    color: transparent;
+  }
+
+  /*Design für den Text, wenn ich über die Bilder hover*/
+  .imageBackgroundText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: transparent;
+    font-size: 2.5vh;
+    width: 40vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+    border-radius: 10px;
+  }
+
+  /*lässt den Hover-text erscheinen*/
+  .pictureContainer:hover .imageBackgroundText {
+    color: white;
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .secondPage {
+    background-color: #e7e0eb;
+    position: relative;
+    width: 100vw;
+  }
+
+  /*Überschrift*/
+  .titlePageTwo h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 5vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+ 
+    
+  }
+
+  /*Container der Bilder*/
+  .pictures {
+    display: flex;
+    flex-direction: column; /* Änderung auf column */
+    align-items: center; /* Zentriert die Elemente horizontal */
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pictures .pictureContainer {
+    position: relative;
+    margin-bottom: 10px; /* Abstand zwischen den Bildern */
+  }
+
+  /*design der Bilder*/
+  .pictures img {
+    width: 60vw;
+    height: 50vh;
+    padding: 1vw;
+    transition: transform 0.3s;
+  }
+
+  /*design der Bildtexte*/
+  .imageText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .pictureContainer:hover img {
+    transform: scale(1.1);
+  }
+
+  /*ausblenden der Stichworte, wenn ich über die Bilder hover*/
+  .pictureContainer:hover .imageText {
+    color: transparent;
+  }
+
+  /*Design für den Text, wenn ich über die Bilder hover*/
+  .imageBackgroundText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: transparent;
+    font-size: 2vh;
+    width: 40vw;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: color 0.3s;
+  }
+
+  /*lässt den Hover-text erscheinen*/
+  .pictureContainer:hover .imageBackgroundText {
+    color: white;
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .secondPage {
+    background-color: #e7e0eb;
+    position: relative;
+    width: 100vw;
+  }
+
+  /*Überschrift*/
+  .titlePageTwo h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 4.7vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+    
+  }
+
+  /*Container der Bilder*/
+  .pictures {
+    display: flex;
+    flex-direction: column; /* Änderung auf column */
+    align-items: center; /* Zentriert die Elemente horizontal */
+    margin-top: 10vh;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .pictures .pictureContainer {
+    position: relative;
+    margin-bottom: 10px; /* Abstand zwischen den Bildern */
+  }
+
+  /*design der Bilder*/
+  .pictures img {
+    width: 60vw;
+    height: 45vh;
+    padding: 1vw;
+    transition: transform 0.3s;
+  }
+
+  /*design der Bildtexte*/
+  .imageText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    font-size: 7vw;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .pictureContainer:hover img {
+    transform: scale(1.1);
+  }
+
+  /*ausblenden der Stichworte, wenn ich über die Bilder hover*/
+  .pictureContainer:hover .imageText {
+    color: transparent;
+  }
+
+  /*Design für den Text, wenn ich über die Bilder hover*/
+  .imageBackgroundText {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: transparent;
+    font-size: 1.6vh;
+    width: 38vw;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  /*lässt den Hover-text erscheinen*/
+  .pictureContainer:hover .imageBackgroundText {
+    color: white;
+    background-color: rgba(68, 68, 68, 0.8);
+  }
+}
+
+/*-----------------ANIMATION--------------*/
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.AnimationTitle, .AnimationPictures {
+  animation-name: slideInFromLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards; /* Behält den finalen Status nach der Animation bei */
+}
+
+.AnimationTitle, .AnimationPictures {
+  will-change: transform, opacity;
+}

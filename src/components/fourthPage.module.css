@@ -1,0 +1,13 @@
+
+.videoDesign {
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+  }
+  
+  #fourth-page {
+    height: 100vh;
+    width: auto;
+  }
+
