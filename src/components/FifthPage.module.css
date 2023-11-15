@@ -1,0 +1,621 @@
+
+.FifthPage {
+  background-color: #E7E0EB;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.errorText {
+  color: #80358c;
+  font-weight: bold;
+  margin-top: 5px; /* optional: Abstand zwischen Input-Feld und Fehlermeldung */
+}
+
+
+@media only screen and (min-width: 1200px) {
+ 
+  .kontakt h1 {
+    color: #80358c;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-bottom: 10%;
+    font-size: 5vh;
+    
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 10vh;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contactMe {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+   
+  }
+
+  .myPicture img {
+    width: 20vw;
+    height: auto;
+  }
+
+  .MyName {
+    color: #80358c;
+    font-size: 2vw;
+    font-weight: bold;
+  }
+
+  .MyRole {
+    font-size: 1.7vw;
+    margin-top: -2vh;
+    font-weight: bold;
+  }
+
+  .myNameAndRole {
+    margin-top: 2vh;
+  }
+
+  input {
+    width: 40vw;
+    height: 5vh;
+    margin-top: 5%;
+    background-color: white;
+
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .messageInput textarea {
+    width: 40vw;
+    height: 14vh;
+    resize: none;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+    margin-top: 5%;
+  }
+
+  .buttonSend button {
+    width: 10vw;
+    height: 5vh;
+
+    background-color: white;
+
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    font-weight: bold;
+    font-size: 1vw;
+
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttonSend button:hover {
+    background-color: #80358c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .checkboxForData {
+    width: 1vw;
+  }
+
+  .textForDataProtection p {
+    text-align: left;
+    
+  }
+
+  .datenschutzContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+
+  .kontakt h1 {
+    color: #80358c;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-bottom: 10%;
+    font-size: 4vh;
+   
+    
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 10vh;
+  }
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .contactMe {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .myPicture img {
+    width: 25vw;
+    height: auto;
+  }
+
+  .MyName {
+    color: #80358c;
+    font-size: 2.7vw;
+    font-weight: bold;
+  }
+
+  .MyRole {
+    font-size: 2vw;
+    margin-top: -2vh;
+    font-weight: bold;
+  }
+
+  .myNameAndRole {
+    margin-top: 2vh;
+  }
+
+  input {
+    width: 40vw;
+    height: 5vh;
+    margin-bottom: 15px;
+    background-color: white;
+    margin-top: 5%;
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .messageInput textarea {
+    margin-top: 5%;
+    width: 40vw;
+    height: 14vh;
+    resize: none;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+  }
+
+  .buttonSend button {
+    width: 18vw;
+    height: 5vh;
+
+    background-color: white;
+
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+
+    margin-top: 4vh;
+    font-weight: bold;
+    font-size: 1.4vw;
+
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttonSend button:hover {
+    background-color: #80358c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .checkboxForData {
+    width: 1.4vw;
+  }
+
+  .textForDataProtection p {
+    text-align: left;
+   
+  }
+
+  .datenschutzContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 40vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+  .kontakt h1 {
+    color: #80358c;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-bottom: 10%;
+    font-size: 4vh;
+    
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    
+    text-align: left;
+    margin-left: 3vw;
+    display: none;
+ 
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .myPicture img {
+    width: 30vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .MyName {
+    color: #80358c;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .MyRole {
+    font-size: 2.6vw;
+    margin-top: -2vh;
+    font-weight: bold;
+  }
+
+  .myNameAndRole {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+   
+  }
+
+  input {
+    width: 60vw;
+    height: 5vh;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .messageInput textarea {
+    width: 60vw;
+    height: 14vh;
+    resize: none;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+  }
+
+  .buttonSend button {
+    width: 18vw;
+    height: 5vh;
+    background-color: white;
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.4vw;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttonSend button:hover {
+    background-color: #80358c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .checkboxForData {
+    width: 1.7vw;
+  }
+
+  .textForDataProtection p {
+    text-align: left;
+  }
+
+  .datenschutzContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 60vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 19%;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+
+  .kontakt h1 {
+    color: #80358c;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-bottom: 10%;
+    font-size: 4vh;
+    
+    
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    
+    text-align: left;
+    margin-left: 3vw;
+    display: none;
+ 
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .myPicture img {
+    width: 30vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .MyName {
+    color: #80358c;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .MyRole {
+    font-size: 2.6vw;
+    margin-top: -2vh;
+    font-weight: bold;
+  }
+
+  .myNameAndRole {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+   
+  }
+
+  input {
+    width: 60vw;
+    height: 5vh;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .messageInput textarea {
+    width: 60vw;
+    height: 14vh;
+    resize: none;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+  }
+
+  .buttonSend button {
+    width: 18vw;
+    height: 5vh;
+    background-color: white;
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 1.8vw;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttonSend button:hover {
+    background-color: #80358c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .checkboxForData {
+    width: 2.6vw;
+  }
+
+  .textForDataProtection p {
+    text-align: left;
+  }
+
+  .datenschutzContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 60vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 19%;
+  }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+ 
+
+  .kontakt h1 {
+    color: #80358c;
+    text-decoration: underline;
+    letter-spacing: 8px;
+    margin-bottom: 10%;
+    font-size: 4vh;
+    
+    
+  }
+
+  .mainContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 10vh;
+  }
+
+  .aboutMe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    
+    text-align: left;
+    margin-left: 3vw;
+    display: none;
+ 
+  }
+
+  .contactMe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .myPicture img {
+    width: 30vw;
+    height: auto;
+    margin-top: 5vh;
+  }
+
+  .MyName {
+    color: #80358c;
+    font-size: 3vw;
+    font-weight: bold;
+  }
+
+  .MyRole {
+    font-size: 2.6vw;
+    margin-top: -2vh;
+    font-weight: bold;
+  }
+
+  .myNameAndRole {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+    align-items: center;
+    margin-top: 2vh;
+   
+  }
+
+  input {
+    width: 60vw;
+    height: 5vh;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 10px;
+    border-color: white;
+  }
+
+  .messageInput textarea {
+    width: 60vw;
+    height: 14vh;
+    resize: none;
+    border-radius: 10px;
+    border-color: white;
+    padding: 5px;
+  }
+
+  .buttonSend button {
+    width: 25vw;
+    height: 5vh;
+    background-color: white;
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+    margin-top: 2vh;
+    font-weight: bold;
+    font-size: 2.6vw;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .buttonSend button:hover {
+    background-color: #80358c;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .checkboxForData {
+    width: 2.6vw;
+  }
+
+  .textForDataProtection p {
+    text-align: left;
+  }
+
+  .datenschutzContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 60vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    margin-left: 19%;
+  }
+}
+
