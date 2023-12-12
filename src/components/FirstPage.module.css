@@ -7,7 +7,46 @@
   background-position: center; /* Optional: Zentriere das Bild horizontal und vertikal */
 }
 
+@media only screen and (min-width: 412px) and (min-height: 732px) {
+  .logo {
+    width: 30vh;
+    margin-top: 7vh;
+    margin-left: 5vw;
+  }
 
+  .hauptueberschrift {
+    display: flex;
+    justify-content: left;
+    margin-left: 5vw;
+  }
+
+  .hauptueberschrift h1 {
+    text-align: center;
+    color: #80358c;
+    font-size: 5vh;
+    text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
+    margin-top: 10vh;
+  }
+
+  .buttonToNextPage {
+    margin-top: 11vh;
+    background-color: rgba(51, 51, 51, 0.4);
+    color: #80358c;
+    border-width: 0;
+    border-radius: 15px;
+    border-color: white;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+      sans-serif;
+    font-size: 4vh;
+    padding: 2vh 4vw;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .buttonToNextPage:hover {
+    font-size: 4.5vh;
+  }
+}
 
 @media only screen and (min-width: 1200px) {
   .logo {
@@ -152,7 +191,6 @@
     font-size: 4.7vh;
     text-shadow: 0.5vw 0.5vw 0.7vw rgba(55, 32, 100, 0.6);
     margin-top: 12vh;
-   
   }
 
   .buttonToNextPage {
@@ -227,7 +265,8 @@
   }
 }
 
-.AnimationLogoPageOne, .AnimationTextButton {
+.AnimationLogoPageOne,
+.AnimationTextButton {
   animation-name: slideFromUp;
   animation-duration: 2s;
   animation-timing-function: ease-out;
@@ -236,4 +275,3 @@
   animation-direction: normal;
   animation-fill-mode: forwards; /* Behält die letzte Frame-Position bei Animation bei */
 }
-
